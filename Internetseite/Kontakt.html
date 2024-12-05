@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(
+          180deg,
+          rgb(71, 71, 71, 1) 0%,
+          rgba(71, 71, 71, 1) 70%,
+          rgba(71, 71, 71, 1) 100%
+        );
+        font-size: 15px;
+        height: 50vw;
+        width: 80vw;
+        font-family: "Roboto", Arial;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .header-image {
+        height: 60vh;
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(0.5);
+      }
+
+      hr {
+        border: 0;
+        height: 0;
+        border-top: 1px solid rgba(0, 0, 0, 1);
+        margin: 1em 0;
+      }
+
+      .Container {
+        position: absolute;
+        right: 32px;
+        left: 32px;
+        top: 16px;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .menu-link {
+        color: azure;
+      }
+
+      .Logo {
+        position: absolute;
+        left: 32px;
+        top: 16px;
+      }
+
+      .Logo2 {
+        position: absolute;
+        top: 25px;
+        left: 250px;
+      }
+
+      .wrapper {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 20px;
+        border: 5px rgba(255, 255, 255, 0.05);
+        border-radius: 10px;
+        box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+        width: 80%;
+      }
+
+      .container3 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        color: azure;
+      }
+
+      .container3 a {
+        color: #fff;
+      }
+
+      .container h2 {
+        font-weight: 400;
+        font-size: 1.6em;
+        color: #36658f;
+        background: #fff;
+        padding: 5px;
+        text-align: center;
+        margin: 0 5px;
+        border-radius: 2px;
+      }
+
+      .container h3 {
+        font-weight: 500;
+        font-size: 1.1em;
+        color: #fff;
+        margin: 30px 0 10px 0;
+        letter-spacing: 2px;
+      }
+
+      .container p {
+        font-weight: 300;
+        font-size: 1em;
+        color: #fff;
+        padding: 3px;
+        margin: 1px 0;
+      }
+
+      .container p:hover {
+        background-color: rgba(23, 84, 137, 1);
+      }
+
+      .info {
+        width: 70%;
+        height: auto;
+        border-right: 2px solid #474747;
+      }
+
+      .contactform {
+        width: 55%;
+        height: auto;
+      }
+
+      .row {
+        display: flex;
+        flex-direction: column;
+        margin: 33px;
+      }
+
+      .contactform input,
+      label {
+        transition: 0.2s all ease-in;
+      }
+
+      .contactform input,
+      label,
+      select,
+      textarea {
+        outline: none;
+      }
+
+      .contactform select {
+        padding: 5px;
+        margin: 2px 0 15px 0;
+      }
+
+      .contactform textarea {
+        width: 100%;
+        height: 150px;
+        padding: 5px;
+      }
+
+      .contactform input[type="submit"] {
+        width: 100%;
+        height: auto;
+        border: none;
+        background: #006ed5;
+        margin: 10px 5px;
+        border-radius: 3px;
+        padding: 8px;
+        color: #fff;
+      }
+
+      .contactform input [type="submit"]:hover {
+        background: #004688;
+        cursor: pointer;
+      }
+
+      .contactform input [type="submit"]:focus {
+        border: none;
+      }
+
+      .contactform label {
+        font-size: 9em;
+        color: #fff;
+        padding: 0 0 5px 0;
+      }
+
+      .contactform input {
+        border: none;
+        padding: 10px 5px 2px 2px;
+        border-bottom: 1px solid #d4d4d4;
+        font-size: 1em;
+        font-weight: 300;
+        color: #fff;
+        background: none;
+      }
+
+      .contactform input:focus {
+        border-bottom: 1px solid #474747;
+      }
+
+      .contactform input + label {
+        color: #474747;
+      }
+
+      .Container2 {
+        position: absolute;
+        top: 600px;
+        right: 430px;
+        justify-content: flex-end;
+      }
+
+      .menu-link {
+        color: white;
+        text-decoration: none;
+        margin-left: 15px;
+        text-align: center;
+      }
+
+      .menu-link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="header-image" src="Bilder/Container 1.png" />
+    <div class="Container">
+      <img src="Bilder/Zueblin-Logo.jpg" />
+
+      <div>
+        <h1 class="menu-link">Kontakt</h1>
+      </div>
+    </div>
+    <img src="Bilder/TBS1.jpg" class="Logo2" />
+
+    <div class="wrapper">
+      <div class="container3">
+        <div class="info">
+          <h2>Kurz und Knapp</h2>
+          <h4>E-Mail:</h4>
+          <p>marcomarcel.skora@students.tbs1.de</p>
+        </div>
+        <div class="contaktform">
+          <form>
+            <div class="row">
+              <h5>Wie Können wir Ihnen weiterhelfen?</h5>
+              <input type="text" id="vorname" />
+              <label for="vorname">Vorname</label>
+
+              <input type="text" id="nachname" />
+              <label for="nachname">Nachname</label>
+
+              <input type="email" id="email" />
+              <label for="email">E-Mail</label>
+
+              <label for="auswahl">Auswahl treffen:</label>
+              <select id="auswahl">
+                <option>Fragen zur Dokumentation</option>
+                <option>Fragen zum Projekt</option>
+                <option>Sonstige fragen</option>
+              </select>
+
+              <label for="massage">Ihre Nachricht:</label>
+              <textarea id="massage"></textarea>
+
+              <input type="submit" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="Container2">
+      <a class="menu-link" href="index.html">Home</a>
+      <a class="menu-link" href="Projekt.html">Projekt</a>
+      <a class="menu-link" href="Projektpartner.html">Projektpartner</a>
+      <a class="menu-link" href="Team.html">Team</a>
+      <a class="menu-link" href="Impressum.html">Impressum</a>
+    </div>
+  </body>
+</html>
